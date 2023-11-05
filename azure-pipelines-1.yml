@@ -5,10 +5,7 @@
 
 name: Azure Static Web Apps CI/CD
 
-pr:
-  branches:
-    include:
-      - main
+
 trigger:
   branches:
     include:
