@@ -1,10 +1,13 @@
 name: Azure Static Web Apps CI/CD
-pr:
-  branches:
-    include:
-      - main
-trigger: main
-  
+on:
+  push:
+    branches:
+    - main
+    - release/*
+jobs:
+  my_job:
+    name: deploy to staging
+    runs-on: macOS-latest
 pool:
   name: Default
   demands:
