@@ -3,13 +3,8 @@ pr:
   branches:
     include:
       - main
-trigger:
-  branches:
-    include:
-      - main
-
-
-
+trigger: main
+  
 pool:
   name: Default
   demands:
