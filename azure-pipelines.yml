@@ -1,5 +1,9 @@
 name: Azure Static Web Apps CI/CD
 
+pr:
+  branches:
+     include:
+       - main
 trigger:
   branches:
     include:
@@ -9,16 +13,15 @@ jobs:
 - job: build_and_deploy_job
   displayName: Build and Deploy Job
   condition: or(eq(variables['Build.Reason'], 'Manual'),or(eq(variables['Build.Reason'], 'PullRequest'),eq(variables['Build.Reason'], 'IndividualCI')))
-pool:
-  name: Default
-  demands:
-  - agent.os -equals Darwin
+  pool:
+    name: Default
+    demands:
+    - agent.os -equals Darwin
+  variables:
+  - group: Azure-Static-Web-Apps-ambitious-sky-0c1e9da10-variable-group
   steps:
   - checkout: self
     submodules: true
-  variables:
-  - group: Azure-Static-Web-Apps-ambitious-sky-0c1e9da10-variable-group
-  
   - task: AzureStaticWebApp@0
     inputs:
       azure_static_web_apps_api_token: "e15dc117740c0d788d09932ac633da96da47366ecd8ebbb3a170cf2805bffa9f4-0258d5ec-6d01-40ef-a4c2-7c2c3ed1be64010263913"
