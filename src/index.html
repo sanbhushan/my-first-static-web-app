@@ -1,17 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <meta charset="utf-8">
+  <title>The Evergreens</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css"></link>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/67b4a9aeb2.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="">The Evergreens</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html">Checkout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Welcome to Sustainable Shopping</h1>
+          <a role="button" class="btn btn-dark btn-lg download-button" href="https://www.amazon.com/gp/css/homepage.html?ref_=nav_AccountFlyout_ya" target="_blank"> Shop Now </a>
+          <a role="button" class="btn btn-outline-blue btn-lg download-button" href="#about">Our Vision</a>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="main.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading price-section-header">Sneak Peek</h2>
+    <p>Let's make our surrounding more greener and cleaner</p>
+
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="price-header"> Purifying Plants</h3>
+          </div>
+          <img class="price-img" src="ArecaPalm-image.jpeg.webp" alt="Air Purification">
+          <div class="card-body">
+            <h2 class="price-text">$30<span class="price-spec"> per plant</span></h2>
+       
+            <a role="button" class="btn btn-lg btn-block btn-dark" href="product_detail.html" target="_blank">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="price-header">Desktop Plants</h4>
+          </div>
+          <img class="price-img" src="Dieffenbachia-image.jpeg" alt="Desktop Plants">
+          <div class="card-body">
+            <h5 class="price-text">$20<span class="price-spec"> per plant</span></h5>
+         
+            <a role="button" class="btn btn-lg btn-block btn-dark" href="product_detail.html" target="_blank">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h6 class="price-header">Flowering Plants</h6>
+          </div>
+          <img class="price-img" src="peacelily.jpeg" alt="Peace Lily">
+          <div class="card-body">
+            <h7 class="price-text">$20<span class="price-spec"> per plant</span></h7>
+            <a role="button" class="btn btn-lg btn-block btn-dark" href="product_detail.html" target = "_blank">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">No more artifical plants for tabletop</h2>
+          <img class="testimonial-image" src="ttop.jpeg" alt="Soothing Tabletop">
+          <em> Denver,Colorado</em>
+        
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">My cats are happier with these greeneries</h2>
+          <img class="testimonial-image" src="petsafe.jpeg" alt="Corner plants">
+          <em>Dallas, Texas</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-heart fa-4x feature-icon"></i>
+          <h3 class="feature-title">Air Purification</h3>
+          <p>Keep your home cleaner in a greener way.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-check-circle fa-4x feature-icon"></i>
+          <h3 class="feature-title">Desktop Plants</h3>
+          <p>Let my office too breathe.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-bolt fa-4x feature-icon"></i>
+          <h3 class="feature-title">Flowering Plants</h3>
+          <p>No more faux plants</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- About Section -->
+
+  <section class="colored-section" id="about">
+
+    <div class="container-fluid about">
+
+      <h3 class="big-heading">My Story</h3>
+      <img class="story-img" src="testimonials.jpg" alt="Always a Nature Lover">
+      <p class="Our Vision">One stop closer to Sustainable living.
+      </p>
+
+    </div>
+  </section>
+  
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x social-icon"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x social-icon"></i></a>
+      <a href="contact.html" target="_blank"><i class="fas fa-envelope fa-2x social-icon"></i></a>
+      <p>© Copyright ©2023 The Evergreens</p>
+    </div>
+
+  </footer>
+
+
 </body>
 
 </html>
